@@ -1,3 +1,11 @@
-const h2 = document.createElement("h2");
-h2.textContent = "I am quite talented and amazing.\n It's really something else.";
-document.querySelector("body").appendChild(h2);
+function createParagraph() {
+    const para = document.createElement('p');
+    para.textContent = 'Hello I\'m down here!';
+    document.body.appendChild(para);
+  }
+  
+  const buttons = document.querySelectorAll('button');
+  
+  for (const button of buttons) {
+    button.addEventListener('click', createParagraph);
+  }
